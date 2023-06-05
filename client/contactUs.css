@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+.contactUs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* border-top: 2px solid #0073cf; */
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .footer{
+    height: 3vh;
+    background-color: #0073cf;
+  }
+  .heading{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+
+  }
+  .contact hr {
+    width: 30%;
+    margin: 0 auto;
+    border: 2px solid #0073cf;
+    margin-bottom: 2rem;
+  }
+  .contact{
+    background-color: #131313;
+    height: 60vh;
+    color: white;
+  }
+  
+  .contactUs ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .contactUs .heading1{
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .contactUs ul li {
+    list-style: none;
+  }
+  
+  .contactUs ul li a {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 30px;
+    transition: 0.5s;
+  }
+  
+  .contactUs ul li a span {
+    position: absolute;
+    transition: transform 0.5s;
+  }
+  
+  .contactUs ul li a span:nth-child(1),
+  .contactUs ul li a span:nth-child(3) {
+    width: 100%;
+    height: 3px;
+    background: #0073cf;
+    
+  }
+  
+  .contactUs ul li a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right;
+  }
+  
+  .contactUs ul li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+  }
+  
+  .contactUs ul li a span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+  }
+  
+  .contactUs ul li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+  }
+  
+  .contactUs ul li a span:nth-child(2),
+  .contactUs ul li a span:nth-child(4) {
+    width: 3px;
+    height: 100%;
+    /* background: #0073cf; */
+    background: white;
+  }
+  
+  .contactUs ul li a span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+  }
+  
+  .contactUs ul li a:hover span:nth-child(2) {
+    transform: scale(1);
+    transform-origin: top;
+    transition: transform 0.5s;
+  }
+  
+  .contactUs ul li a span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: top;
+  }
+  
+  .contactUs ul li a:hover span:nth-child(4) {
+    transform: scale(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+  }
+  
+  .facebook:hover {
+    color: #43b7ff;
+  }
+  
+  .facebook:hover span {
+    background: #3b5998;
+  }
+  
+  .twitter:hover {
+    color: #1da1f2;
+  }
+  
+  .twitter:hover span {
+    background: #1da1f2;
+  }
+  
+  .instagram:hover {
+    color: #c32aa3;
+  }
+  
+  .instagram:hover span {
+    background: #c32aa3;
+  }
+  
+  .google:hover {
+    color: #dd4b39;
+  }
+  
+  .google:hover span {
+    background: #dd4b39;
+  }
+  
+  ul li a .twitter {
+    color: #1da1f2;
+  }
+  
+  ul li a:hover:nth-child(3) {
+    color: #c32aa3;
+  }
+  
+  ul li a:hover:nth-child(4) {
+    color: #dd4b39;
+  }
+  

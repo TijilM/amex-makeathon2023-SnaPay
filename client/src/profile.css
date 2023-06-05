@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #2f3337;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .unhide {
+    display: block;
+  }
+ /* navbar css */
+.topnav {
+  overflow: hidden;
+  background-color: #222222;
+}
+
+.topnav a {
+  float: left;
+  color: #fff;
+  background-color: #222222;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #222222;
+  /* color: black; */
+}
+
+.topnav a.active {
+  background-color: #0073cf;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+  .message-container {
+    margin: 0% 10%;
+    background-color: white;
+  }
+
+  #upload-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #0073cf;
+    text-decoration: none;
+    text-align: center;
+  }
+
+
+  /* main section starts */
+
+  main {
+    width: auto;
+    margin: 1% 10%;
+  }
+
+  .profile-card {
+    width: auto ;
+    max-width: 1080px;
+    margin: 4% 8% 3% 8%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 8px #212A3E;
+    border-radius: 25px;
+    transition: all 300ms ease-in-out;
+  }
+
+  .profile-card:hover {
+    box-shadow: 0px 8px 15px;
+  }
+
+  .left-container {
+    width: 50%;
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 0 0 25px;
+    background-color: #222222;
+  }
+  .profile-card{
+    background-color: white;
+  }
+  .right-container {
+    height: auto;
+    width: 65%;
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  .photo-container {
+    border-radius: 20%;
+    overflow: hidden;
+    border: 3px solid white;
+  }
+
+  #photo {
+    height: 320px;
+    width: 300px;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+  }
+
+  #file {
+    display: none;
+  }
+
+  #uploadBtn {
+    height: 100%;
+    width: 100%;
+    padding: 50% 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: wheat;
+    line-height: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .profile-text-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    text-size-adjust: auto;
+    color: #002447;
+    background-color: white;
+    font-weight: 700;
+    line-height: 250%;
+    letter-spacing: 0.5px;
+  }
+  
+  .profile-text {
+    font-weight: 500;
+    line-height: 250%;
+    background-color: white;
+    letter-spacing: 1px;
+  }
+
+  .save-container {
+    background-color: #2f3337;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .save-btn {
+    background-color: #0073cf;
+    font-family: 'Bebas Neue', sans-serif;
+    /* font-weight: 700; */
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    letter-spacing: 1px;
+  }
+  
+  /* .save-btn:hover {
+    background-color: #bcd1ff;
+    color:#002447
+    
+  } */
+
+  /* footer section ends */
