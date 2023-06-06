@@ -113,14 +113,13 @@ main {
 .section-container input.form-control.mb-3 {
     font-size: 15px;
     margin-bottom: 5px;
-    color: #fff;
+    color: #000;
     letter-spacing: 1px;
     width: 82%;
     border-radius: 30px;
     padding: 10px 20px;
     font-family: 'Bebas Neue', sans-serif;
 }
-
 .section-container button#sub_btn.btn.w-100.btn-outline-primary.mb-3 {
     width: 82% !important;
     background: #0073cf;

@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -6,46 +6,15 @@
     <title>SnapPay</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="global.css" />
-    <link rel="icon" href="./images/favicon.png" type="image/icon type" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap"
-      rel="stylesheet"
-    />
-    <script defer type="text/javascript" src="./script.js"></script>
-    <script defer type="module" src="./src/logout.js"></script>
-  </head>
-  <body>
-    <div class="topnav">
-      <a href="./bank.html">Bank Transfer</a>
-      <a href="./wallet.html">Wallet Tranfer</a>
-      <a class="active" >Expense Tracker</a>
-      <a href="./bills.html">Govt. Bills</a>
-      <div class="topnav-right">
-        <a href="./src/profile.html">Profile</a>
-        <a href="#about">Logout</a>
-      </div>
-    </div>
-   
-  </body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Expense Tracker</title>
-   
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    
+    <link rel="icon" href="./images/favicon.png" type="image/icon type" />
     <link rel="stylesheet" href="./expense.css" />
     <script defer type="text/javascript" src="./expense.js"></script>
   </head>
@@ -63,10 +32,8 @@
     <div class="wrapper">
       <div class="container">
         <div class="sub-container">
-          
-          
-          <div class="user-amount-container">
-            <h3>Enter Expenses</h3>
+          <div class="grid-item">
+            <h3>Enter  Expenditure  Details</h3>
             <p class="hide error" id="product-title-error">
               Values cannot be empty
             </p>
@@ -84,17 +51,15 @@
             <button class="submit" id="add-expenses">Add</button>
           </div>
         </div>
-       
-        <div class="output-container flex-space">
+          <div class="grid-item">
             <div class="totalExpenses">
-                <p>Total Expenses For Today</p>
+                <p>Total Expenditure</p>
                 <span id="expenditure-value">0</span>
             </div>
-            
-          
         </div>
       </div>
-     
+    </div>
+    <div class="wrapper">
       <div class="list">
         <h3>Expenses</h3>
         <div class="list-container" id="list"></div>

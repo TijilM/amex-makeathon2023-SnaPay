@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #2f3337;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
   }
 
   .hide {
@@ -15,7 +14,6 @@
   .unhide {
     display: block;
   }
- /* navbar css */
 .topnav {
   overflow: hidden;
   background-color: #222222;
@@ -33,7 +31,6 @@
 
 .topnav a:hover {
   background-color: #222222;
-  /* color: black; */
 }
 
 .topnav a.active {
@@ -46,22 +43,16 @@
 }
 
   .message-container {
-    margin: 0% 10%;
     background-color: white;
   }
 
   #upload-text {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
     color: #0073cf;
     text-decoration: none;
     text-align: center;
   }
-
-
-  /* main section starts */
-
   main {
     width: auto;
     margin: 1% 10%;
@@ -72,7 +63,6 @@
     max-width: 1080px;
     margin: 4% 8% 3% 8%;
     display: flex;
-    
     justify-content: center;
     align-items: center;
     box-shadow: 0px 3px 8px #212A3E;
@@ -132,22 +122,20 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
     color: wheat;
     line-height: 30px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
     cursor: pointer;
     display: none;
   }
 
   .profile-text-title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 23px;
     text-size-adjust: auto;
     color: #002447;
     background-color: white;
-    font-weight: 700;
     line-height: 250%;
     letter-spacing: 0.5px;
   }
@@ -170,8 +158,7 @@
   .save-btn {
     background-color: #0073cf;
     font-family: 'Bebas Neue', sans-serif;
-    /* font-weight: 700; */
-    font-size: 25px;
+    font-size: 30px;
     color: #fff;
     text-decoration: none;
     border-radius: 25px;
@@ -183,10 +170,3 @@
     letter-spacing: 1px;
   }
   
-  /* .save-btn:hover {
-    background-color: #bcd1ff;
-    color:#002447
-    
-  } */
-
-  /* footer section ends */
