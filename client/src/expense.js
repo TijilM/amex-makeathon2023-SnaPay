@@ -3,6 +3,7 @@
 let userAmount = document.getElementById("user-amount");
 const addExpensesButton = document.getElementById("add-expenses");
 const productTitle = document.getElementById("product-title");
+const productDesc = document.getElementById("product-desc");
 const errorMessage = document.getElementById("budget-error");
 const productTitleError = document.getElementById("product-title-error");
 const productCostError = document.getElementById("product-cost-error");
@@ -42,7 +43,7 @@ const listCreator = (expenseName, expenseValue) => {
   let sublistContent = document.createElement("div");
   sublistContent.classList.add("sublist-content", "flex-space");
   list.appendChild(sublistContent);
-  sublistContent.innerHTML = `<p class="product">${expenseName}</p><p class="amount">\$${expenseValue}</p>`;
+  sublistContent.innerHTML = `<p class="product">${expenseName}</p><p class="amount"> ₹${expenseValue}</p>`;
   let editButton = document.createElement("button");
   editButton.classList.add("fa-solid", "fa-pen-to-square", "edit");
   editButton.style.fontSize = "1.2em";

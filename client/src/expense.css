@@ -148,7 +148,6 @@ body {
   }
   .list {
     background-color: #222222;
-    /* padding: 1.8em 1.2em; */
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
     border-radius: 0.6em;
     padding-left: 1rem;
@@ -157,9 +156,7 @@ body {
   }
   .sublist-content {
     width: 80%;
-    /* border-left: 0.3em solid #0073cf; */
     margin-bottom: 0.6em;
-    /* padding: 0.5em 1em; */
     font-size: 30px;
     display: grid;
     grid-template-columns: 3fr 2fr 1fr 1fr;

@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F3EFE0;
+    background-color: #222222;
+    font-family: 'Bebas Neue', sans-serif;
   }
 
   .hide {
@@ -14,51 +15,6 @@
   .unhide {
     display: block;
   }
-
-  /* for swal from sweetalert.js */
-  .swal-title {
-    font-family: "Monteserrat", sans-serif;
-    color: black;
-  }
-
-  .swal-text {
-    font-family: "Monteserrat", sans-serif;
-    text-align: center;
-    color: 	#333;
-  }
-
-  .swal-button--confirm {
-    font-family: "Monteserrat", sans-serif;
-    background-color: #0073cf;
-  }
-
-  .swal-button--confirm:hover {
-    background-color: #002447;
-  }
-
-  /* end of swal */
-
-  /* header section starts */
-  
-  header {
-    text-align: center;
-    padding: 1% 5% 1% 5%;
-    background-color: white;
-  }
-  
-  .logo {
-    cursor: pointer;
-  }
-
-  .logo-img {
-    width: auto;
-    height: 50px;
-  }
-
-  /* header section ends */
-
-  /* main section starts */
-
   main {
     width: auto;
     text-align: center;
@@ -69,25 +25,23 @@
   .message-container {
     margin: 0% 10%;
     padding: 2% 5% 0% 5%;
-    background-color: #F3EFE0;
+    background-color: #222222
   }
 
   #message {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    color: #0073cf;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: #fff;
     text-decoration: none;
     text-align: center;
   }
 
   #videoElement {
       color: white;
-      background-color: #666;
+      background-color: #2f3337;
       transform: scaleX(-1);
       border: 5px #333 solid;
-      /* border-radius: 25px; */
-      border-radius: 50%;
+      border-radius: 20%;
       object-fit: cover; 
   }
 
@@ -95,42 +49,37 @@
       position: absolute;
       top: 0;
       left: 0;
-      margin: 10.4%;
+      margin: 8.4%;
       padding: 0 26.4%;
       transform: scaleX(-1);
   }
 
-  /* main section ends */
-
-  /* footer section starts */
-
   .submit-container {
     margin: 1% 10%;
     padding: 1% 5% 1% 5%;
-    background-color: #F3EFE0;
+    background-color: #222222;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .submit-btn {
-    background-color: #0073cf;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    color: #222222;
+    background-color: #004075;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    color: #fff;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 1.5rem;
     border: none;
-    height: 40px;
-    width: 200px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease 0s;
     letter-spacing: 1px;
   }
   
   .submit-btn:hover {
-    background-color: #0073cf;
+    transform: scale(1.06);
+    transition: 0.6s;
   }
 
   .pay-btn {
@@ -145,5 +94,36 @@
     background-color: #449d44;
     border-color: #398439;
   }
+  .swal-title {
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    background-color: #222222;
+    font-size: 20px;
+  }
 
-  /* footer section ends */
+  .swal-text {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: 	white;
+    background-color: #222222;
+    font-size: 20px;
+  }
+
+  .swal-button--confirm {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #0073cf;
+    font-size: 20px;
+  }
+
+  .swal-button--confirm:hover {
+    background-color: #002447;
+
+  }
+
+ 
+  header {
+    text-align: center;
+    padding: 1% 5% 1% 5%;
+    background-color: #222222;
+  }
+  

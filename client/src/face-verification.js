@@ -1,6 +1,5 @@
 //In this js file, swal is a keyword in sweetalert.js used instead of alert keyword.
 
-//------------------------importing image from localStorage or RealTime Database-------------------------//
 let currentUser;
 let keepLoggedIn = localStorage.getItem("keepLoggedIn");
 let proceedFromHomeButtonOnly = sessionStorage.getItem("proceedFromHomeButtonOnly")
@@ -19,14 +18,14 @@ if (currentUser) {
   referencedImageURL = currentUser.profileImgURL;
   if (proceedFromHomeButtonOnly == "false") {
     swal("Before starting face verification, fill transaction details at home page.", "Pressing 'OK' will redirect you to home.", "warning", {timer: 4000}).then(function() {
-      window.location.href = "../index.html"
+      window.location.href = "./bank.html"
     })
   }
 }
 else {
   swal("Login First!", "To start face verification, Please Log In!\n\nPressing 'OK' will redirect you to log in.", "warning", {timer: 4000}).then(function(reply) {
     if (reply) window.location.href = "./login.html"
-    else window.location.href = "../index.html"
+    else window.location.href = "./bank.html"
   })
 }
 
