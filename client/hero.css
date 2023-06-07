@@ -24,24 +24,28 @@ body {
 .us{
    background-color: #131313;
    color: #fff;
-   height: 120vh;
    display: flex;
    flex-direction: column;
    align-items: center;
    text-align: center;
+   padding-bottom: 4rem;
 }
 .use{
    display: flex;
    justify-content: center;
 
 }
-.para{
+.para,.para1{
    border: 3px solid #0073cf;
    padding: 2rem;
    border-radius: 2rem;
-   height: 30vh;
    text-align: left;
    margin-top: 5vh;
+}
+.para p,.para1 p{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   line-height: 25px;
 }
 .para .heading{
    font-family: 'Bebas Neue', sans-serif;
@@ -63,19 +67,12 @@ body {
    border: 2px solid #0073cf;
    margin-bottom: 1rem;
  }
-.faq .para1{
-   border: 3px solid #0073cf;
-   padding: 2rem;
-   margin-top: 5vh;
-   border-radius: 2rem;
-   height: 75vh;
-   text-align: left;
-}
+
 .context {
    width: 100%;
    position: absolute;
    top: 30vh;
-   z-index: 1; /* Move the context above the animation layer */
+   z-index: 1;
 }
 .context p {
    text-align: center;
@@ -96,10 +93,6 @@ body {
    border: none;
    font-family: 'Bebas Neue', sans-serif;
    text-decoration: none;
-   
-   /* position: relative; Add position relative to create stacking context */
-   /* z-index: 1; Move the buttons above the animation layer */
-   /* font-family: 'Montserrat', sans-serif; */
    
 }
 .context .flexBox .btn:hover {
@@ -266,7 +259,6 @@ body {
  }
  .topnav a:hover{
    text-decoration: underline;
-   /* text-decoration-color:#0073cf ; */
    color: #0073cf;
    transform: scale(1.2);
    transition: 0.5s;
