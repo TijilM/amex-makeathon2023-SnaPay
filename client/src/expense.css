@@ -39,6 +39,9 @@ body {
   .topnav-right {
     float: right;
   }
+  .topnav-right a:hover{
+    text-decoration: underline;
+  }
   .wrapper {
     display: flex;
     justify-content: center;

@@ -10,7 +10,7 @@ sessionStorage.setItem('payFromFacePageOnly', payFromFacePageOnly);
 
 //-----------------------------------------The References--------------------------------------------//
 const signup = document.getElementById('signup');
-const login = document.getElementById('login');
+const login = document.getElementById('logout');
 const profile = document.getElementById('profile');
 const homeButton = document.getElementById('home-next-btn');
 let currentUser = null;
@@ -27,7 +27,7 @@ function getUserName() {
 }
 
 const redirectToLogin = () => {
-    window.location.href = "./src/login.html";
+    window.location.href = "./login.html";
 }
 
 const logout = () => {
@@ -46,8 +46,6 @@ window.onload = function () {
         //redirecting next home button to login
         homeButton.addEventListener('click', redirectToLogin);
     } else {
-        signup.classList.replace("signup-class", "hide");
-        login.innerText = "Log Out";
         login.addEventListener('click', logout);
     }
 }

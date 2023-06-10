@@ -23,7 +23,7 @@ function getUserName() {
 getUserName();
 if (currentUser) {
     swal("Already Logged In!", "Log Out first to continue.", "warning").then(function() {
-        window.location.replace('../index.html');
+        window.location.replace('./wallet.html');
     });
 }
 
@@ -115,11 +115,11 @@ function login(user) {
     
     if (!keepLoggedIn) {
         sessionStorage.setItem('user', JSON.stringify(user));
-        window.location.replace("../index.html");
+        window.location.replace("./bank.html");
     } else {
         localStorage.setItem('keepLoggedIn','yes');
         localStorage.setItem('user', JSON.stringify(user));
-        window.location.replace("../index.html");
+        window.location.replace("./bank.html");
     }
 }
 

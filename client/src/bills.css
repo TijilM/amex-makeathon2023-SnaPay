@@ -43,6 +43,9 @@
 .topnav-right {
   float: right;
 }
+.topnav-right a:hover{
+  text-decoration: underline;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
