@@ -20,70 +20,39 @@
     <link rel="stylesheet" href="./login.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js" defer></script>
     <script defer type="module" src="./login.js"></script>
   </head>
   <body>
     <div class="topnav">
-        <a class="active" href="../index.html">Back</a>
+      <a class="active" href="../index.html">Back</a>
     </div>
-    <main>   
-
-      <!-- <div class="section-container">
-
-                
-            <div class="imgBx">
-              <img src="../images/main5.png" />
-            </div>
-
-            <div class="mb-5">
-                <h3 class="mb-3">Welcome!</h3>
-                <input 
-                type="text" 
-                placeholder="Email" 
-                id="emailInp" 
-                class="form-control mb-3 topper">
-                <input 
-                type="password" 
-                placeholder="Password" 
-                id="passInp" 
-                class="form-control mb-3">
-                <button
-                  type="text"
-                  id="submitBtn"
-                  class="btn w-100 btn-outline-primary mb-3"
-                >
-                  Log In
-                </button>
-                <div class="ask-account">
-                  Don't have an account?
-                  <a href="./signup.html" class="ask-account-link">Sign Up</a>
-                </div>
-        </div> -->
-        <div class="section-container">
-                
-          <div class="imgBx">
-            <img src="../images/main5.png" />
-          </div>
-
-          <div class="mb-5">
-              <h3 class="mb-3">Welcome Back!</h3>
-              <input type="text" placeholder="Email" id="emailInp" class="form-control mb-3 topper">
-              <input type="password" placeholder="Password" id="passInp" class="form-control mb-3">
-              <div class="custom-control custom-switch mb-3">
-                  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                  <label class="custom-control-label" for="customSwitch1">Keep me Logged In</label>
-              </div>
-              <button type="text"  id="submitBtn" class="btn w-100 btn-outline-primary mb-3">Log In</button>
-              <div class="ask-account">
-                  Don't have an account?
-                  <a href="./signup.html" class="ask-account-link">Sign Up</a>
-              </div>
-          </div>
+    <main>
       
-      </div>
+      <div class="section-container">
+                
+        <div class="imgBx">
+            <img src="../images/main5.png">
         </div>
-      </div>
+
+        <div class="mb-5">
+            <h3 class="mb-3">Welcome Back!</h3>
+            <input type="text" placeholder="Email" id="emailInp" class="form-control mb-3 topper">
+            <input type="password" placeholder="Password" id="passInp" class="form-control mb-3">
+            <div class="custom-control custom-switch mb-3">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1">Keep me Logged In</label>
+            </div>
+            <button type="text"  id="submitBtn" class="btn w-100 btn-outline-primary mb-3">Log In</button>
+            <div class="ask-account">
+                Don't have an account?
+                <a href="./signup.html" class="ask-account-link">Sign Up</a>
+            </div>
+        </div>
+    
+    </div>
     </main>
   </body>
 </html>

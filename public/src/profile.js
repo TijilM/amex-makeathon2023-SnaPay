@@ -1,6 +1,3 @@
-//In this js file, swal is a keyword in sweetalert.js used instead of alert keyword.
-
-//reseting the browser storage value
 let proceedFromHomeButtonOnly = false;
 sessionStorage.setItem('proceedFromHomeButtonOnly', proceedFromHomeButtonOnly);
 
@@ -10,27 +7,28 @@ sessionStorage.setItem('faceVerified', faceVerified);
 let payFromFacePageOnly = false;
 sessionStorage.setItem('payFromFacePageOnly', payFromFacePageOnly);
 
-// helper functions for html
 const clickSaveBtn = () => {
-    window.location.href = '../index.html';
-};
+    window.location.href = './bank.html';
+}; 
   
-const clickLogoImg = () => {
-    window.location.href = '../index.html';
-};
+// const clickLogoImg = () => {
+//     window.location.href = './bank.html';
+// };
 
-document.getElementById('logo').addEventListener('click', clickLogoImg);
+
+// document.getElementById('logo').addEventListener('click', clickLogoImg);
 document.getElementById('save-btn').addEventListener('click', clickSaveBtn);
 
 
 
 //-----------------------------------------script for css of profile-img-box--------------------------------------------//
+
 const imgContainer = document.querySelector('.photo-container');
 const img = document.querySelector('#photo');
 const file = document.querySelector('#file');
 const uploadBtn = document.querySelector('#uploadBtn');
 
-//if user hover on imgContainer 
+// if user hover on imgContainer 
 imgContainer.addEventListener('mouseenter', function() {
     uploadBtn.style.display = "block";
 });
@@ -41,9 +39,9 @@ imgContainer.addEventListener('mouseleave', function() {
 });
 
 
-
 let currentUser = null;
 let keepLoggedIn = localStorage.getItem("keepLoggedIn");
+
 //------------------------------fetching data from localStorage to show on profile-------------------------//
 function getUserName() {
     if (keepLoggedIn == "yes") {
@@ -60,7 +58,7 @@ if (currentUser) {
     let email = currentUser.email;
     let username = currentUser.username;
     let phone = currentUser.phone;
-    let payid = phone + "@facepay";
+    let payid = phone + "@snapay";
     
     document.getElementById('name').innerText = name;
     document.getElementById('email').innerText = email;
@@ -70,7 +68,7 @@ if (currentUser) {
 } else {
     swal("Login First!", "To view profile, Please Log In!\n\nPressing 'OK' will redirect you to log in.", "warning").then(function(reply) {
         if (reply) window.location.href = "./login.html"
-        else window.location.href = "../index.html"
+        else window.location.href = "./bank.html"
     })
 }
 
@@ -142,7 +140,7 @@ const uploadProcess = async () => {
     uploadTask.on('state-changed', (snapshot) => {
         const uploadProgress = (snapshot.bytesTransferred / snapshot.totalBytes).toFixed(4) * 100;
         uploadMessage.classList.replace('hide', 'unhide');
-        uploadMessage.innerHTML = "* * Uploading " + uploadProgress + "% * *";
+        uploadMessage.innerHTML = " Image Uploading ..." + uploadProgress + "%";
         document.getElementById('save-btn').classList.replace('unhide', 'hide');
 
     }, (error) => {

@@ -40,7 +40,7 @@
 }
 
 .topnav-right {
-  float: right;
+  float: right; 
 }
 
   .message-container {
@@ -55,6 +55,7 @@
     margin-top: 2rem;
     text-align: center;
   }
+  
   main {
     width: auto;
     margin: 1% 10%;
@@ -125,8 +126,8 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20px;
     cursor: pointer;
-    display: none;
-  }
+    opacity: 0;
+}
 
   .profile-text-title {
     font-family: 'Bebas Neue', sans-serif;
