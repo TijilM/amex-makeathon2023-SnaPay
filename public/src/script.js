@@ -6,7 +6,7 @@ let walletSwitch = document.getElementById('wallet-switch');
 let bankSwitch = document.getElementById('bank-switch');
 let wallet = document.getElementById('wallet-transfer-container');
 let bank = document.getElementById('bank-transfer-container');
-
+ 
 //reseting the browser storage value
 let proceedFromHomeButtonOnly = false;
 sessionStorage.setItem('proceedFromHomeButtonOnly', proceedFromHomeButtonOnly);
@@ -20,7 +20,7 @@ sessionStorage.setItem('payFromFacePageOnly', payFromFacePageOnly);
 const clickHomeNextBtn = () => {
     proceedFromHomeButtonOnly = true;
     sessionStorage.setItem('proceedFromHomeButtonOnly', proceedFromHomeButtonOnly);
-    window.location.href = './src/face-verification.html';
+    window.location.href = './face-verification.html';
 }
 
 let currentUser = null;
@@ -37,5 +37,5 @@ if (currentUser.profileImgURL != "null") {
     let photoURL = currentUser.profileImgURL;
     profileLogo.setAttribute('src', photoURL);
 } else {
-    profileLogo.setAttribute('src', "./images/profileM.jpg");
+    profileLogo.setAttribute('src', "../images/profilePic1.jpg");
 }

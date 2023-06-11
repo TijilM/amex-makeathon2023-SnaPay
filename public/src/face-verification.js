@@ -60,7 +60,7 @@ const clickStartBtn = () => {
 
 
 //-----------------------------------------face-verification--------------------------------------------//
-message.innerText = "Starting Camera..."
+message.innerText = "Camera is switching on"
 
 // Loading Models
 Promise.all([

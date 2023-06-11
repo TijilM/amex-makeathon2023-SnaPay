@@ -9,6 +9,8 @@
 
   .hide {
     display: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
   }
 
   .unhide {
@@ -44,7 +46,9 @@
 }
 
   .message-container {
-    background-color: white;
+    background-color:#222222;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
   }
 
   #upload-text {
@@ -53,6 +57,7 @@
     color: #fff;
     text-decoration: none;
     margin-top: 2rem;
+    background-color: #2f3337;
     text-align: center;
   }
   
@@ -167,5 +172,32 @@
     cursor: pointer;
     transition: background-color 0.3s ease 0s;
     letter-spacing: 1px;
+  }
+  .swal-title {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 0;
+    color: white;
+  }
+
+  .swal-text {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 0;
+    text-align: center;
+    color:	white;
+  }
+
+  .swal-button--confirm {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 0;
+    font-size: 15px;
+    background-color: #0073cf;
+    border: none;
+  }
+
+  .swal-button--confirm:hover {
+    text-decoration: underline;
   }
   
