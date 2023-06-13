@@ -24,9 +24,12 @@
     <div class="topnav">
       <a href="./bank.html">Bank Transfer</a>
       <a href="./wallet.html">Money Bag</a>
-      <a class="active" href="./expense.html">Expense Tracker</a>
+      <a class="active">Expense Tracker</a>
       <a href="./bills.html">Govt. Bills</a>
       <div class="topnav-right">
+        <a id="profile" class="profile-class">
+          <img class="profile-logo" id="profileLogo" src="./images/profileM.jpg" alt="profile"/>
+      </a>
         <a href="./profile.html">Profile</a>
         <a id="logout">Logout</a>
       </div>
@@ -39,6 +42,7 @@
             <p class="hide error" id="product-title-error">
               Values cannot be empty
             </p>
+            <center>
             <input
               type="text"
               class="product-title"
@@ -56,6 +60,7 @@
               id="user-amount"
               placeholder="Enter Cost of Product"
             />
+          </center>
             <button class="submit" id="add-expenses">Add</button>
           </div>
         </div>

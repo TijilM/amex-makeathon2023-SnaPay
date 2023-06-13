@@ -43,9 +43,27 @@
 
 .topnav-right {
   float: right;
+  background-color: #222222;
 }
 .topnav-right a:hover{
   text-decoration: underline;
+}
+#profile {
+  cursor: pointer;
+  text-align: center;
+  padding: 0px;
+  background-color: #222222;
+}
+
+.profile-logo {
+  height: 45px;
+  width: 45px;
+  padding: 5px;
+  display: flex;
+  background-color: #222222;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40%;
 }
  
 header {
@@ -96,22 +114,6 @@ header {
 
 #login:hover {
   background-color: #002447;
-}
-
-#profile {
-  cursor: pointer;
-  text-align: center;
-  margin: 0px 10px;
-}
-
-.profile-logo {
-  height: 50px;
-  width: 50px;
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
 }
 
 .main-container {
