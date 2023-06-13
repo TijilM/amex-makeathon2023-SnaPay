@@ -70,27 +70,27 @@ function Validation() {
     let phoneregex = /^(\+\d{1,3}[- ]?)?[0]?\d{10}$/;
     
     if (isEmptyOrSpaces(name.value) || isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value) || isEmptyOrSpaces(phone.value) || isEmptyOrSpaces(pass.value)) {
-        swal("", "You cannot leave any field empty!", "warning");
+        swal("", "You cannot leave any field empty!", "error");
         return false;
     }
 
     if (!nameregex.test(name.value)) {
-        swal("", "The name should only contain alphabets!", "warning");
+        swal("", "The name should only contain alphabets!", "error");
         return false;
     }
 
     if (!emailregex.test(email.value)) {
-        swal("", "Enter a valid email!", "warning");
+        swal("", "Enter a valid email!", "error");
         return false;
     } 
 
     if (!userregex.test(username.value)) {
-        swal("", "Username can only be alphanumeric.\n-Username must be atleast of 3 characters.\n-Username cannot contain spaces.", "warning");
+        swal("", "Username can only be alphanumeric.\n-Username must be atleast of 3 characters.\n-Username cannot contain spaces.", "error");
         return false;
     }
 
     if (!phoneregex.test(phone.value)) {
-        swal("", "Enter a valid phone number!", "warning");
+        swal("", "Enter a valid phone number!", "error");
         return false;
     }
 

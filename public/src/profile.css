@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #2f3337;
+    background-color: #2f3337; 
     font-family: 'Bebas Neue', sans-serif;
   }
 
@@ -19,6 +19,7 @@
 .topnav {
   overflow: hidden;
   background-color: #222222;
+  z-index: 1000;
 }
 
 .topnav a {
@@ -33,7 +34,7 @@
 }
 
 .topnav a:hover {
-  background-color: #222222;
+  text-decoration: underline;
 }
 
 .topnav a.active {
@@ -51,15 +52,7 @@
     color: #fff;
   }
 
-  #upload-text {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 25px;
-    color: #fff;
-    text-decoration: none;
-    margin-top: 2rem;
-    background-color: #2f3337;
-    text-align: center;
-  }
+
   
   main {
     width: auto;
@@ -102,6 +95,7 @@
   .photo-container {
     border-radius: 20%;
     overflow: hidden;
+    /* padding: 1rem; */
     border: 3px solid white;
   }
 
@@ -121,17 +115,27 @@
     height: 100%;
     width: 100%;
     padding: 50% 0;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    z-index: 100;
     color: wheat;
     line-height: 30px;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20px;
     cursor: pointer;
     opacity: 0;
+}
+#upload-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 2rem;
+  background-color: #2f3337;
+  text-align: center;
 }
 
   .profile-text-title {
@@ -143,7 +147,30 @@
     line-height: 250%;
     letter-spacing: 0.5px;
   }
-  
+  .leftside{
+    background-color: #222222;
+  }
+  .upldbtn{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: #222222;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+  }
+  #upld {
+    padding: 10px 20px;
+    background-color: #0073cf;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  #upld:hover {
+    background-color: #003b6b;
+    transform: scale(1.1);
+  }
   .profile-text {
     font-weight: 500;
     line-height: 250%;
@@ -172,6 +199,9 @@
     cursor: pointer;
     transition: background-color 0.3s ease 0s;
     letter-spacing: 1px;
+  }
+  .swal{
+    background-color: #2f3337;
   }
   .swal-title {
     font-family: 'Bebas Neue', sans-serif;

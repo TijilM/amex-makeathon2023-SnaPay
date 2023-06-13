@@ -61,22 +61,39 @@ function isEmptyOrSpaces(str) {
 }
 
 function Validation() {
-    // let emailregex = /^[a-zA-Z0-9]+@(gmail|yahoo|outlook)\.com$/;
     let emailregex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    
+  
     if (isEmptyOrSpaces(email.value) || isEmptyOrSpaces(pass.value)) {
-        swal("", "You cannot leave any field empty!", "warning");
-        return false;
+      swal({
+        title: "",
+        text: "You cannot leave any field empty!",
+        icon: "error",
+        customClass: {
+          container: "custom-swal-container",
+          popup: "custom-swal-popup",
+        },
+      });
+      return false;
     }
-
+  
     if (!emailregex.test(email.value)) {
-        swal("", "Enter a valid email!", "warning");
-        return false;
+      swal({
+        title: "",
+        text: "Enter a valid email!",
+        icon: "error",
+        customClass: {
+          container: "custom-swal-container",
+          popup: "custom-swal-popup",
+        },
+      });
+      return false;
     }
-
-    return true; 
-}
-
+  
+    return true;
+  }
+  
+  
+  
 //---------------------------------------AUTHENTICATION PROCESS--------------------------------------//
 function AuthenticateUser() {
     if (!Validation()) return;

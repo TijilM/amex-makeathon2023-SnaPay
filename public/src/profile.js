@@ -23,20 +23,20 @@ document.getElementById('save-btn').addEventListener('click', clickSaveBtn);
 
 //-----------------------------------------script for css of profile-img-box--------------------------------------------//
 
-const imgContainer = document.querySelector('.photo-container');
+// const imgContainer = document.querySelector('.left-container');
 const img = document.querySelector('#photo');
 const file = document.querySelector('#file');
 const uploadBtn = document.querySelector('#uploadBtn');
 
 // if user hover on imgContainer 
-imgContainer.addEventListener('mouseenter', function() {
-    uploadBtn.style.display = "block";
-});
+// imgContainer.addEventListener('mouseenter', function() {
+//     uploadBtn.style.display = "block";
+// });
 
-//if we hover out from imgContainer
-imgContainer.addEventListener('mouseleave', function() {
-    uploadBtn.style.display = "none";
-});
+// //if we hover out from imgContainer
+// imgContainer.addEventListener('mouseleave', function() {
+//     uploadBtn.style.display = "block";
+// });
 
 
 let currentUser = null;
@@ -140,17 +140,17 @@ const uploadProcess = async () => {
     uploadTask.on('state-changed', (snapshot) => {
         const uploadProgress = (snapshot.bytesTransferred / snapshot.totalBytes).toFixed(4) * 100;
         uploadMessage.classList.replace('hide', 'unhide');
-        uploadMessage.innerHTML = " Image Uploading ..." + uploadProgress + "%";
+        uploadMessage.innerHTML = " Image Uploaded" + uploadProgress + "%";
         document.getElementById('save-btn').classList.replace('unhide', 'hide');
 
     }, (error) => {
         swal("Image not uploaded!", "", "error");
     }, () => {
         getDownloadURL(uploadTask.snapshot.ref).then((imageURL) => {
-            URL = imageURL;
+            URL = imageURL; 
             setURLtoRealDB(imageURL);
             setImgToLocalStorage(imageURL);
-            swal("Photo uploaded successfully!", "", "success");
+            // swal("Photo uploaded successfully!", "", "success");
             uploadMessage.classList.replace('unhide', 'hide');
             document.getElementById('save-btn').classList.replace('hide', 'unhide');
         });
@@ -165,9 +165,6 @@ const setURLtoRealDB = (URL) => {
         profileImgURL: URL
     })
 }
-
-
-
 //-----------------------------------------Setting Image URL to Local/Session Storage--------------------------------------------//
 function setImgToLocalStorage(URL) {
     currentUser.profileImgURL = URL;
