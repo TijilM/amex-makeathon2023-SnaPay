@@ -31,10 +31,12 @@
 }
 
 .topnav a:hover {
-  background-color: #222222;
+  background-color: #023157;
   color: white;
   text-decoration: none;
+  transition:0.5s;
 }
+
 
 .topnav a.active {
   background-color: #0073cf;
@@ -45,9 +47,7 @@
   float: right;
   background-color: #222222;
 }
-.topnav-right a:hover{
-  text-decoration: underline;
-}
+
 #profile {
   cursor: pointer;
   text-align: center;
