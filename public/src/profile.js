@@ -15,11 +15,8 @@ const clickSaveBtn = () => {
 //     window.location.href = './bank.html';
 // };
 
-
 // document.getElementById('logo').addEventListener('click', clickLogoImg);
 document.getElementById('save-btn').addEventListener('click', clickSaveBtn);
-
-
 
 //-----------------------------------------script for css of profile-img-box--------------------------------------------//
 
@@ -78,16 +75,27 @@ if (currentUser) {
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
 
+// const firebaseConfig = {
+//     apiKey: "AIzaSyC_xmkI67ZokC5S3bs_I4Wn1ZHL9qbsy6E",
+//     authDomain: "facepay-b93d2.firebaseapp.com",
+//     databaseURL: "https://facepay-b93d2-default-rtdb.firebaseio.com",
+//     projectId: "facepay-b93d2",
+//     storageBucket: "facepay-b93d2.appspot.com",
+//     messagingSenderId: "894989632635",
+//     appId: "1:894989632635:web:a14b1f884f00e60bd20ede",
+//     measurementId: "G-GPV0QHPX2T"
+// };
+
 const firebaseConfig = {
-    apiKey: "AIzaSyC_xmkI67ZokC5S3bs_I4Wn1ZHL9qbsy6E",
-    authDomain: "facepay-b93d2.firebaseapp.com",
-    databaseURL: "https://facepay-b93d2-default-rtdb.firebaseio.com",
-    projectId: "facepay-b93d2",
-    storageBucket: "facepay-b93d2.appspot.com",
-    messagingSenderId: "894989632635",
-    appId: "1:894989632635:web:a14b1f884f00e60bd20ede",
-    measurementId: "G-GPV0QHPX2T"
-};
+    apiKey: "AIzaSyDK9m40BJhgtW_8X2Zh9-ZRCf6I28lXOMY",
+    authDomain: "snapay-user.firebaseapp.com",
+    databaseURL: "https://snapay-user-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "snapay-user",
+    storageBucket: "snapay-user.appspot.com",
+    messagingSenderId: "880786596429",
+    appId: "1:880786596429:web:8a6bed05934b4e06af7204",
+    measurementId: "G-CGC5M954GX"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

@@ -1,6 +1,17 @@
 {
   "dependencies": {
     "express": "^4.18.1",
+    "firebase": "^9.22.2",
     "nodemon": "^2.0.16"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "amex-makeathon2023-snapay",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

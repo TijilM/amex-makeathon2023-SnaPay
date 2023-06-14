@@ -32,15 +32,26 @@ if (currentUser) {
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
 
+// const firebaseConfig = {
+//     apiKey: "AIzaSyC_xmkI67ZokC5S3bs_I4Wn1ZHL9qbsy6E",
+//     authDomain: "facepay-b93d2.firebaseapp.com",
+//     projectId: "facepay-b93d2",
+//     storageBucket: "facepay-b93d2.appspot.com",
+//     messagingSenderId: "894989632635",
+//     appId: "1:894989632635:web:a14b1f884f00e60bd20ede",
+//     measurementId: "G-GPV0QHPX2T"
+// };
+
 const firebaseConfig = {
-    apiKey: "AIzaSyC_xmkI67ZokC5S3bs_I4Wn1ZHL9qbsy6E",
-    authDomain: "facepay-b93d2.firebaseapp.com",
-    projectId: "facepay-b93d2",
-    storageBucket: "facepay-b93d2.appspot.com",
-    messagingSenderId: "894989632635",
-    appId: "1:894989632635:web:a14b1f884f00e60bd20ede",
-    measurementId: "G-GPV0QHPX2T"
-};
+    apiKey: "AIzaSyDK9m40BJhgtW_8X2Zh9-ZRCf6I28lXOMY",
+    authDomain: "snapay-user.firebaseapp.com",
+    databaseURL: "https://snapay-user-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "snapay-user",
+    storageBucket: "snapay-user.appspot.com",
+    messagingSenderId: "880786596429",
+    appId: "1:880786596429:web:8a6bed05934b4e06af7204",
+    measurementId: "G-CGC5M954GX"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -52,6 +63,7 @@ const db = getDatabase();
 //-----------------------------------------The References--------------------------------------------//
 const name = document.getElementById('nameInp');
 const email = document.getElementById('emailInp');
+const aadhar = document.getElementById('aadharInp');
 const username = document.getElementById('userInp');
 const phone = document.getElementById('phoneInp');
 const pass = document.getElementById('passInp');
@@ -64,7 +76,6 @@ function isEmptyOrSpaces(str) {
 
 function Validation() {
     let nameregex = /^[a-zA-Z\s]+$/;
-    // let emailregex = /^[a-zA-Z0-9]+@(gmail|yahoo|outlook)\.com$/;
     let emailregex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     let userregex = /^[a-zA-Z0-9]{3,}$/;
     let phoneregex = /^(\+\d{1,3}[- ]?)?[0]?\d{10}$/;
@@ -122,9 +133,10 @@ function RegisterUser() {
                 fullname: name.value,
                 username: username.value,
                 email: email.value,
+                aadhar:aadhar.value,
                 phone: phone.value,
                 profileImgURL: "null",
-                password: encPass()
+                password: encPass(),
             })
             .then(() => {
                 swal("User added successfully!", "Before using the application, please Log In at next step.", "success").then(function() {
