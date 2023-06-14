@@ -54,12 +54,14 @@ if (currentUser) {
     let name = currentUser.fullname;
     let email = currentUser.email;
     let username = currentUser.username;
+    let aadharno = currentUser.aadhar;
     let phone = currentUser.phone;
     let payid = phone + "@snapay";
     
     document.getElementById('name').innerText = name;
     document.getElementById('email').innerText = email;
     document.getElementById('username').innerText = username;
+    document.getElementById('aadhar').innerText = aadharno;
     document.getElementById('phone').innerText = phone;
     document.getElementById('payid').innerText = payid;
 } else {
@@ -68,8 +70,6 @@ if (currentUser) {
         else window.location.href = "./bank.html"
     })
 }
-
-
 
 //-----------------------------------------Firebase--------------------------------------------//
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
@@ -108,8 +108,6 @@ import { getDatabase, ref, get, child, set, update } from "https://www.gstatic.c
 
 const realdb = getDatabase();
 
-
-
 //-----------------------------------------selection of img from pc--------------------------------------------//
 //when we choose an image to upload
 let chosenImageToUpload = null;
@@ -127,8 +125,6 @@ file.addEventListener('change', function() {
     }
 });
 
-
-
 //-----------------------------------------Uploading Files (Image) to Firebase Storage Database--------------------------------------------//
 let emailString = currentUser.email;
 emailString = emailString.replaceAll('.', '');
@@ -141,7 +137,7 @@ let URL = currentUser.profileImgURL;
 
 const uploadProcess = async () => {
     const storage = getStorage();
-    const storageRef = storeRef(storage, "Profile Images/profile-img@" + emailString);
+    const storageRef = storeRef(storage, "Profile Images/profile-img@" + emailString);  
     const uploadTask = uploadBytesResumable(storageRef, chosenImageToUpload);
     const uploadMessage = document.getElementById('upload-text');
     
@@ -158,14 +154,11 @@ const uploadProcess = async () => {
             URL = imageURL; 
             setURLtoRealDB(imageURL);
             setImgToLocalStorage(imageURL);
-            // swal("Photo uploaded successfully!", "", "success");
             uploadMessage.classList.replace('unhide', 'hide');
             document.getElementById('save-btn').classList.replace('hide', 'unhide');
         });
     });
 }
-
-
 
 //-----------------------------------------Setting Image URL to Firebase Realtime Database--------------------------------------------//
 const setURLtoRealDB = (URL) => {
