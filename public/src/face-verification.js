@@ -1,5 +1,6 @@
 //In this js file, swal is a keyword in sweetalert.js used instead of alert keyword.
 
+//------------------------importing image from localStorage or RealTime Database-------------------------//
 let currentUser;
 let keepLoggedIn = localStorage.getItem("keepLoggedIn");
 let proceedFromHomeButtonOnly = sessionStorage.getItem("proceedFromHomeButtonOnly")
@@ -17,15 +18,15 @@ getUserName();
 if (currentUser) {
   referencedImageURL = currentUser.profileImgURL;
   if (proceedFromHomeButtonOnly == "false") {
-    swal("Before starting face verification, fill transaction details at home page.", "Pressing 'OK' will redirect you to home.", "warning", {timer: 4000}).then(function() {
-      window.location.href = "./bank.html"
+    swal("Remember to fill the traction details in the form.", "Pressing 'OK' will redirect you to home.", "warning", {timer: 4000}).then(function() {
+      window.location.href = "../index.html"
     })
   }
 }
 else {
   swal("Login First!", "To start face verification, Please Log In!\n\nPressing 'OK' will redirect you to log in.", "warning", {timer: 4000}).then(function(reply) {
     if (reply) window.location.href = "./login.html"
-    else window.location.href = "./bank.html"
+    else window.location.href = "../index.html"
   })
 }
 
@@ -49,18 +50,15 @@ let faceVerified;
 
 
 // helper function for HTML file (face-verification.html)
-const clickLogoImg = () => {
-  window.location.href = '../index.html';
-}
+// const clickLogoImg = () => {
+//   window.location.href = '../index.html';
+// }
 
 const clickStartBtn = () => {
   startFaceRecognition();
 }
-
-
-
 //-----------------------------------------face-verification--------------------------------------------//
-message.innerText = "Camera is switching on"
+message.innerText = "Initialising Camera ..."
 
 // Loading Models
 Promise.all([
@@ -94,15 +92,15 @@ function loadAndLabelImagesFromDB() {
     labels.map(async (label) => {
       i++
       const descriptions = []
-      message.innerText = `Processing Data...`
+      message.innerText = `Collecting Data...`
       //const imgURL = `../images/${label}.jpg`
       const imgURL = referencedImageURL
       
       // if the user has not uploaded the profile picture
       if (imgURL == "null") {
-        swal("Update Profile!", "To start face verification, Please upload the profile picture first in the profile section.\n\nPressing 'OK' will redirect you to profile section.", "warning").then(function(reply) {
+        swal("Update Profile First!", "To initiate face verification, kindly upload your profile picture in the designated profile section.\n\n Clicking 'OK' will redirect you to the profile section.", "warning").then(function(reply) {
           if (reply) window.location.href = "./profile.html"
-          else message.innerText = "Please update your profile picture!"
+          else message.innerText = "Please upload latest profile picture!"
         })
       }
 
@@ -129,11 +127,11 @@ async function matchFace() {
   // using FaceMatcher API with 60% score which depicts the maximum descriptor distance (i.e. Euclidean Distance)
   faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors, 0.6)
 
-  message.innerText = "Data Processed! and Camera Started!"
+  message.innerText = "Data Processed!"
   setTimeout(() => {
-    message.innerText = "To begin! Press 'Start Verification' below."
+    message.innerText = "To begin! Press 'Verify Me!' below."
     if (showStartBtn) startBtn.classList.replace('hide', 'unhide')
-    else swal("Something went wrong!", "Please refresh the page.", "error").then(function(reply) {
+    else swal("Oops! something went wrong", "Refresh the page.", "error").then(function(reply) {
       if(reply) window.location.reload()
     })
   }, 1000)
@@ -160,7 +158,7 @@ async function startFaceRecognition() {
       canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
 
       // finding the best match and generating the result
-      if (!resizedDetections[0]) swal("Face is not detected!", "Please take the shot near better light source.\nOr, Try removing the spectacles/glasses or mask.\nOr, Try updating the profile picture.", "warning")
+      if (!resizedDetections[0]) swal("No face detected!", " Capture the photo in a well-lit environment.\n\n Consider removing your spectacles/glasses or mask.\n\n If necessary,update your profile picture for better quality.", "error")
       const descriptorResult = resizedDetections[0].descriptor
       const result = faceMatcher.findBestMatch(descriptorResult)
 
@@ -194,16 +192,16 @@ function makePayment() {
   payFromFacePageOnly = true;
   if (faceLabel == "known" && faceScore <= 0.45) {
     faceVerified = true;
-    swal(`${currentUser.fullname}, you are now verified!`, "Press the pay button to make payment.", "success")
-    message.innerText = "Press the 'Pay' button to make payment."
-    startBtn.innerText = "Pay"
+    swal(`${currentUser.fullname}, Success! you are verified.`, "Please confirm to continue.", "success")
+    message.innerText = "Press the confirmation button to make transaction."
+    startBtn.innerText = "Confirm transaction"
     startBtn.classList.add('pay-btn')
     startBtn.onclick = () => window.location.replace("./payment.html")
   }
 
   else if (faceLabel == "known" && faceScore > 0.45) {
     faceVerified = false;
-    message.innerText = `Try again! we want to be more sure that it's ${currentUser.fullname}.`
+    message.innerText = `Please attempt another capture as we aim to increase the level of certainty. ${currentUser.fullname}.`
   }
   
   else {

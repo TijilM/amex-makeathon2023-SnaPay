@@ -83,7 +83,6 @@
   }
 
   .pay-btn {
-    width: 150px;
     letter-spacing: 2px;
     color: white;
     background-color: #5cb85c;
@@ -94,36 +93,35 @@
     background-color: #449d44;
     border-color: #398439;
   }
+
+  
   .swal-title {
     font-family: 'Bebas Neue', sans-serif;
-    color: white;
-    background-color: #222222;
-    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 0;
+    color: black;
   }
 
   .swal-text {
     font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 0;
     text-align: center;
-    color: 	white;
-    background-color: #222222;
+    color: black;
     font-size: 20px;
   }
 
   .swal-button--confirm {
     font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    border: none;
+    font-weight: 0;
+    font-size: 15px;
     background-color: #0073cf;
-    font-size: 20px;
+    border: none;
   }
 
   .swal-button--confirm:hover {
-    background-color: #002447;
-
+    background-color: #0073cf;
   }
-
- 
-  header {
-    text-align: center;
-    padding: 1% 5% 1% 5%;
-    background-color: #222222;
-  }
-  

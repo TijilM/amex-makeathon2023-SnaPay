@@ -215,10 +215,7 @@ main {
   }
 
   .swal-button--confirm:hover {
-    text-decoration: underline;
     background-color: #0073cf;
   }
-  .custom-swal-warning .swal-icon--error {
-    background-color:#2f3337
-  }
+ 
  

@@ -81,12 +81,12 @@ function Validation() {
     let phoneregex = /^(\+\d{1,3}[- ]?)?[0]?\d{10}$/;
     
     if (isEmptyOrSpaces(name.value) || isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value) || isEmptyOrSpaces(phone.value) || isEmptyOrSpaces(pass.value)) {
-        swal("", "You cannot leave any field empty!", "error");
+        swal("", "Fill in all the fields!", "error");
         return false;
     }
 
     if (!nameregex.test(name.value)) {
-        swal("", "The name should only contain alphabets!", "error");
+        swal("", "Name must only contain alphabets!", "error");
         return false;
     }
 
@@ -96,7 +96,7 @@ function Validation() {
     } 
 
     if (!userregex.test(username.value)) {
-        swal("", "Username can only be alphanumeric.\n-Username must be atleast of 3 characters.\n-Username cannot contain spaces.", "error");
+        swal("", "Username must be alphanumeric.\n-Username must be atleast of 3 characters.\n-Username must not contain spaces.", "error");
         return false;
     }
 
@@ -139,7 +139,7 @@ function RegisterUser() {
                 password: encPass(),
             })
             .then(() => {
-                swal("User added successfully!", "Before using the application, please Log In at next step.", "success").then(function() {
+                swal("User added successfully!", "Please Log In to proceed.", "success").then(function() {
                     window.location.replace("./login.html");
                 });
             })

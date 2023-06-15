@@ -77,7 +77,7 @@ function Validation() {
     if (isEmptyOrSpaces(email.value) || isEmptyOrSpaces(pass.value)) {
       swal({
         title: "",
-        text: "You cannot leave any field empty!",
+        text: "Fill in all the fields!",
         icon: "error",
         customClass: {
           container: "custom-swal-container",
