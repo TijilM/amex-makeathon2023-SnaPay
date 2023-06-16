@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
-* {
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #F3EFE0;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #222222;
+    font-family: 'Bebas Neue', sans-serif;
 
   }
 
@@ -16,59 +17,64 @@
     display: block;
   }
 
-  /* header section starts */
-  
   header {
     text-align: center;
     padding: 1% 5% 1% 5%;
-    background-color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #222222;
+    letter-spacing: 2px;
   }
-
-  .logo-img {
-    width: auto;
-    height: 50px;
-  }
-
-  /* header section ends */
-
-  /* main section starts */
 
   main {
     width: auto;
     text-align: center;
     margin: 5% 10% -1% 10%;
-    padding: 0% 5% 0% 5%;
   }
 
-  .message {
+  .main .message {
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    letter-spacing: 2px;
   }
     
   #thanks-message {
-    font-size: 1.25rem;
+    font-size: 20px;
     padding: 0 0 0.5rem 0;
+    color: white;
+    letter-spacing: 2px;
   }
 
   #success-message {
-    font-size: 2.125rem;
-    font-weight: 700;
+    font-size: 60px;
     color: #4caf50;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    padding: 0;
   }
   
   #request-message {
-    font-size: 1.25rem;
-    padding: 0 0 2.5rem 0;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+
   }
 
   #failure-reason {
-    font-size: 1.25rem;
+    font-size: 20px;
     color: red;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
     padding: 0 0 2.5rem 0;
   }
   
   #redirecting-message {
-    font-size: 0.8rem;
+    font-size: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+
   }
   
 
@@ -89,7 +95,6 @@
     height: 40px;
     width: 150px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
     font-size: 16px;
     text-decoration: none;
     color: white;
@@ -97,8 +102,8 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    letter-spacing: 2px;
     transition: background-color 0.3s ease 0s;
-    letter-spacing: 1px;
   }
 
   .submit-btn:hover {

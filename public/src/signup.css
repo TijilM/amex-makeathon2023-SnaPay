@@ -151,37 +151,3 @@ main {
     text-decoration: underline;
     font-family: 'Bebas Neue', sans-serif;
 }
-.swal-title {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 1px;
-    font-weight: 0;
-    color: black;
-  }
-
-  .swal-text {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 1px;
-    font-weight: 0;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-  }
-
-  .swal-button--confirm {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 1px;
-    text-align: center;
-    border: none;
-    font-weight: 0;
-    font-size: 15px;
-    background-color: #0073cf;
-    border: none;
-  }
-
-  .swal-button--confirm:hover {
-    text-decoration: underline;
-    background-color: #0073cf;
-  }
-  .custom-swal-warning .swal-icon--error {
-    background-color:#2f3337
-  }

@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap');
-* {
+body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -92,36 +92,4 @@
   .pay-btn:hover {
     background-color: #449d44;
     border-color: #398439;
-  }
-
-  
-  .swal-title {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 1px;
-    font-weight: 0;
-    color: black;
-  }
-
-  .swal-text {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 1px;
-    font-weight: 0;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-  }
-
-  .swal-button--confirm {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 1px;
-    text-align: center;
-    border: none;
-    font-weight: 0;
-    font-size: 15px;
-    background-color: #0073cf;
-    border: none;
-  }
-
-  .swal-button--confirm:hover {
-    background-color: #0073cf;
   }

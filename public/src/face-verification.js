@@ -207,7 +207,7 @@ function makePayment() {
   else {
     faceVerified = false;
     swal("Verification Failed!", "Face was not matched with the profile", "error").then(function() {
-      window.location.replace('./payment.html')
+      window.location.replace('./bank.html')
     }) 
   }
 
