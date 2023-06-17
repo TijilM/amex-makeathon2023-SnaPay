@@ -1,5 +1,3 @@
-//In this js file, swal is a keyword in sweetalert.js used instead of alert keyword.
-
 //reseting the browser storage value
 let proceedFromHomeButtonOnly = false;
 sessionStorage.setItem('proceedFromHomeButtonOnly', proceedFromHomeButtonOnly);
@@ -31,16 +29,6 @@ if (currentUser) {
 //-----------------------------------------Firebase--------------------------------------------//
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
-
-// const firebaseConfig = {
-//     apiKey: "AIzaSyC_xmkI67ZokC5S3bs_I4Wn1ZHL9qbsy6E",
-//     authDomain: "facepay-b93d2.firebaseapp.com",
-//     projectId: "facepay-b93d2",
-//     storageBucket: "facepay-b93d2.appspot.com",
-//     messagingSenderId: "894989632635",
-//     appId: "1:894989632635:web:a14b1f884f00e60bd20ede",
-//     measurementId: "G-GPV0QHPX2T"
-// };
 
 const firebaseConfig = {
     apiKey: "AIzaSyDK9m40BJhgtW_8X2Zh9-ZRCf6I28lXOMY",
@@ -117,8 +105,6 @@ function RegisterUser() {
 
     const dbRef = ref(db);
 
-    // replacing dot(.) from the email to avoid error,
-    // Uncaught Error: child failed: path argument was an invalid path = "UsersList/user@email.com". Paths must be non-empty strings and can't contain ".", "#", "$", "[", or "]".
     let emailString = email.value;
     emailString = emailString.replaceAll('.', '');
     emailString = emailString.replaceAll('#', '');

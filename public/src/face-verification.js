@@ -1,5 +1,3 @@
-//In this js file, swal is a keyword in sweetalert.js used instead of alert keyword.
-
 //------------------------importing image from localStorage or RealTime Database-------------------------//
 let currentUser;
 let keepLoggedIn = localStorage.getItem("keepLoggedIn");
@@ -48,11 +46,6 @@ let faceLabel;
 let faceScore;
 let faceVerified;
 
-
-// helper function for HTML file (face-verification.html)
-// const clickLogoImg = () => {
-//   window.location.href = '../index.html';
-// }
 
 const clickStartBtn = () => {
   startFaceRecognition();
