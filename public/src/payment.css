@@ -17,42 +17,43 @@ body {
     display: block;
   }
 
-  header {
-    text-align: center;
-    padding: 1% 5% 1% 5%;
-    font-family: 'Bebas Neue', sans-serif;
-    background-color: #222222;
-    letter-spacing: 2px;
-  }
-
   main {
     width: auto;
     text-align: center;
     margin: 5% 10% -1% 10%;
   }
 
-  .main .message {
+  .message {
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
     color: white;
     letter-spacing: 2px;
+    margin: 0;
   }
     
   #thanks-message {
-    font-size: 20px;
-    padding: 0 0 0.5rem 0;
-    color: white;
+    font-size: 40px;
+    padding: 0;
+    color: #0073cf;
     letter-spacing: 2px;
   }
 
   #success-message {
     font-size: 60px;
-    color: #4caf50;
+    color: #0073cf;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
     padding: 0;
   }
-  
+  .success{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+  }
+  .failure{
+    width: 300px;
+    height: 300px;
+  }
   #request-message {
     font-size: 20px;
     font-family: 'Bebas Neue', sans-serif;
@@ -62,11 +63,11 @@ body {
   }
 
   #failure-reason {
-    font-size: 20px;
-    color: red;
-    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    padding: 0;
+    color: #0073cf;
     letter-spacing: 2px;
-    padding: 0 0 2.5rem 0;
+    font-family: 'Bebas Neue', sans-serif;
   }
   
   #redirecting-message {
@@ -77,14 +78,7 @@ body {
 
   }
   
-
-  /* main section ends */
-
-  /* footer section starts */
-
   .submit-container {
-    margin: 1% 10%;
-    padding: 1% 5% 1% 5%;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -93,8 +87,8 @@ body {
 
   .submit-btn {
     height: 40px;
-    width: 150px;
-    font-family: "Montserrat", sans-serif;
+    width: 150px;  
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 16px;
     text-decoration: none;
     color: white;
@@ -103,11 +97,8 @@ body {
     border-radius: 50px;
     cursor: pointer;
     letter-spacing: 2px;
-    transition: background-color 0.3s ease 0s;
   }
 
   .submit-btn:hover {
     background-color: #002447;
   }
-
-  /* footer section ends */
