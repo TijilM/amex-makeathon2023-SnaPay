@@ -15,7 +15,7 @@ const disableButtons = (bool) => {
   Array.from(editButtons).forEach((element) => {
     element.disabled = bool;
   });
-};
+}; 
 
 //Function To Modify List Elements
 const modifyElement = (element, edit = false) => {
@@ -76,5 +76,6 @@ addExpensesButton.addEventListener("click", () => {
   listCreator(productTitle.value, userAmount.value);
   //Empty inputs
   productTitle.value = "";
+  productDesc.value="";
   userAmount.value = "";
 });

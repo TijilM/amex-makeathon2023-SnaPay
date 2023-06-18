@@ -38,14 +38,14 @@ if (currentUser) {
     let username = currentUser.username;
     let aadharno = currentUser.aadhar;
     let phone = currentUser.phone;
-    let payid = phone + "@snapay";
+    // let payid = phone + "@snapay";
     
     document.getElementById('name').innerText = name;
     document.getElementById('email').innerText = email;
     document.getElementById('username').innerText = username;
     document.getElementById('aadhar').innerText = aadharno;
     document.getElementById('phone').innerText = phone;
-    document.getElementById('payid').innerText = payid;
+    // document.getElementById('payid').innerText = payid;
 } else {
     swal("Login First!", "To view profile, Please Log In!\n\nPressing 'OK' will redirect you to log in.", "warning").then(function(reply) {
         if (reply) window.location.href = "./login.html"
