@@ -62,7 +62,6 @@
   .profile-card {
     width: auto ;
     max-width: 1080px;
-    /* margin: 4% 0% 3% 0%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +72,6 @@
   .profile-container{
     width: 60%;
   }
-
   .left-container {
     width: 50%;
     padding: 5% 5%;
@@ -89,7 +87,6 @@
   .right-container {
     height: auto;
     width: 65%;
-    /* padding: 5% 5%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +135,6 @@
   background-color: #2f3337;
   text-align: center;
 }
-
   .profile-text-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 27px;
