@@ -46,7 +46,6 @@ let faceLabel;
 let faceScore;
 let faceVerified;
 
-
 const clickStartBtn = () => {
   startFaceRecognition();
 }
@@ -133,7 +132,7 @@ async function matchFace() {
 
 // last and final face-recognition function which will be showing the result
 
-async function startFaceRecognition() {
+export async function startFaceRecognition() {
     // removing canvas to prevent overlapping with previous canvas
     if (canvas) canvas.remove();
     
@@ -178,6 +177,8 @@ async function startFaceRecognition() {
     recognizing();
 }
 
+
+//
 
 
 //-----------------------------------------Forwarding for payment response--------------------------------------------//
