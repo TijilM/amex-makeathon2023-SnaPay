@@ -1,4 +1,4 @@
-## SnaPay - Facial Recognition-Based Verification for Secure Transactions
+## SNAPAY - Facial Recognition-Based Verification for Secure Transactions
 AMEX Makeathon theme:  Facial Recognition for transactions
 
 ### Team members:-
