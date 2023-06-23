@@ -1,5 +1,5 @@
 ## SNAPAY - Facial Recognition-Based Verification for Secure Transactions
-AMEX Makeathon theme:  Facial Recognition for transactions
+AMEX Makeathon 2023 theme:  Facial Recognition for transactions
 
 ### Team members:-
 Team Name- ***FaceVengers***
@@ -16,8 +16,8 @@ The facial recognition system should be able to recognize faces in different lig
 - Incorporation of ***facial recognition technology*** to enhance reliability, safety and make the application user-friendly. 
 - Inclusion of an ***extra layer of authentication*** by utilizing ***Aadhar API*** to verify the user’s credentials and cross-check the Aadhar photograph with live-image. 
 - Integration of an ***expense tracking feature*** to easily monitor the user’s spending habits. So users can view their transaction history, and manage their finances. 
-
-
+- Our deployed website: https://snapay-team-facevengers.netlify.app/ 
+  
 ### Instructions:-
 - Registeration using Sign Up, then Login.
 - Update profile picture for dataset collection. 
@@ -38,6 +38,12 @@ The facial recognition system should be able to recognize faces in different lig
 - Backend: Node.js, ExpressJS
 - Database: Firebase
 
+### Machine Learning and Computer Vision
+- ***Image segmentation*** : Using MTCNN and it's internal image standardization techniques. Find the correct region of interest (ROI) in the image. 
+- ***Face Detection*** : Using MTCNN (Multi-Task Cascaded Convolutional Neural Network) and SSD MobileNetV1 Model. Creates a rectangular boundary around the face in the image.
+- ***Face Recognition*** : Using 68 point face-landmark detection Model. Demarcates 68 different points on the face to describe the face characteristics. Finds Euclidean distance between these points.
+
+### Our Implementation
 <img src="Screenshots/1.jpeg"> 
 <img src="Screenshots/2.jpeg"> 
 <img src="Screenshots/3.jpeg"> 
