@@ -38,3 +38,10 @@ The facial recognition system should be able to recognize faces in different lig
 - Backend: Node.js, ExpressJS
 - Database: Firebase
 
+<img src="Screenshots/1.jpeg"> 
+<img src="Screenshots/2.jpeg"> 
+<img src="Screenshots/3.jpeg"> 
+<img src="Screenshots/4.jpeg"> 
+<img src="Screenshots/5.jpeg"> 
+<img src="Screenshots/6.jpeg"> 
+<img src="Screenshots/7.jpeg"> 
